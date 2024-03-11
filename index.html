@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div>
-  <img src="Documents/monster.jpg" width="100%" >
-</br></div>
-<div style="width: 50%;">
-  <img src="Documents/ben.jpg" width="49.8%">
-  </div>
-  <div style="width: 50%;">
-  <img src="Documents/Max.png" width="49.8%">
-</div>
-</body>
+<html lang="pt-br">
+    <head>
+      <style>
+
+      .containerImagem{
+    display: flex;
+    max-width: 100%;
+    border: 2px solid purple;
+    }
+    .imagemUnicaAltura400px{
+     width: 100%;
+     height: 400px;
+    } 
+    .divImagemMeiaTela{
+        min-width: 49%;
+        border: 2px solid purple;
+    }
+    
+    @media screen and (max-width:900px;){
+      .p{
+        font-size: 30px;
+      }
+    }
+    @media screen and (min-width:400px;){
+      .p{
+        font-size: 50px;
+      }
+    }
+      </style>
+    </head>
+    <link rel=”styleSheet”  media=”All” />
+    <body>
+      <h1 class="p">Imagens</h1>
+      <p class="p">Essas imagens representam personagens de desenho animado </p>
+        <div class="containerImagem">
+            <img src="img/monster.jpg" class="imagemUnicaAltura400px">
+        </div>
+
+        <br>
+        <div class="containerImagem">
+
+        <div class="divImagemMeiaTela">
+            <img src="img/ben.jpg" alt="" style="min-width: 100%;" >
+        </div>
+
+        <div class="divImagemMeiaTela">
+            <img src="img/Max.png" alt="" style="max-width: 100%;">
+        </div>
+
+        </div>
+    </body>
 </html>
